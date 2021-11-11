@@ -1,0 +1,183 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/beertap3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 10px;
+}
+
+nav {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 5%;
+    height: 100px;
+}
+
+nav .Logo {
+    margin-top: 10px;
+    width: 8%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+nav .links {
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+nav .links li {
+    list-style: none;
+}
+
+nav .links a {
+    display: block;
+    padding: 1em;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+nav .icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 37.5px;
+    cursor: pointer;
+}
+
+nav .icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+.Circle {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    height: 100%;
+}
+
+.h1 {
+    width: 100%;
+    font-family: 'Abel', sans-serif;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 570px;
+    text-align: center;
+}
+
+.welcome-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+h2 {
+    font-family: 'Abel', sans-serif;
+    font-size: 40px;
+    color: #013E6A;
+}
+
+.p1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #013E6A;
+}
+
+.Party {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/party.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.partycontainer {
+    background-color: rgba(1, 62, 106, 90%);
+    border-radius: 10px;
+    height: 300px;
+    width: 70%;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+h3 { 
+    font-family: 'Abel', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.p2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 768px) {
+    nav .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, .8);
+        transition: all .5s;
+        overflow: hidden;
+    }
+
+    nav .links a {
+        font-size: 20px;
+    }
+
+    nav .icon-burger {
+        display: block;
+    }
+
+    #nav-toggle:checked ~ ul {
+        bottom: 0;
+    }
+    
+}
+
