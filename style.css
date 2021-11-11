@@ -131,9 +131,11 @@ h2 {
     background-color: rgba(1, 62, 106, 90%);
     border-radius: 10px;
     height: 300px;
-    width: 70%;
+    width: 65%;
     justify-content: center;
+    align-items: center;
     margin-left: 100px;
+    padding: 30px;
 }
 
 h3 { 
@@ -146,6 +148,38 @@ h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: white;
+}
+
+button {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: rgba(1, 62, 106, 90%); 
+    color: white; 
+    font-family: 'Abel', sans-serif;
+}
+
+.button:hover {
+    background-color: white;
+    color: #013E6A;
+}
+
+.card-content {
+    border: 2px solid rgba(1, 62, 106, 100);
+    background-color: white;
+    border-radius: 10px;
+    height: 200px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
 
 /*Media Queries*/
