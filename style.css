@@ -90,8 +90,8 @@ nav .icon-burger .line {
     font-family: 'Abel', sans-serif;
     font-size: 50px;
     color: white;
-    position: absolute;
-    top: 570px;
+    position: relative;
+    top: -230px;
     text-align: center;
 }
 
@@ -161,7 +161,7 @@ button {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: rgba(1, 62, 106, 90%); 
+    background-color: rgba(1, 62, 106, 100%); 
     color: white; 
     font-family: 'Abel', sans-serif;
 }
@@ -171,16 +171,98 @@ button {
     color: #013E6A;
 }
 
+.reservation {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .card-content {
-    border: 2px solid rgba(1, 62, 106, 100);
+    border: 5px solid rgba(1, 62, 106, 100);
     background-color: white;
     border-radius: 10px;
-    height: 200px;
+    height: 230px;
     width: 30%;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 30px;
 }
+
+h4 {
+    font-family: 'Abel', sans-serif;
+    font-size: 40px;
+    color: #013E6A;
+}
+
+.reservationbtn {
+    margin: 20px;
+}
+
+.form-row {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    background-color: #013E6A ;
+    width: 100%;
+    
+    height: 200px;
+    position: absolute;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-family: 'Abel', sans-serif;
+    color: white;
+    padding: 20px;
+}
+  
+.flex-item-left {
+    padding: 10px;
+    margin-left: 40px;
+    flex: 33%;
+    text-align: left;
+}
+  
+.flex-item-middle {
+    padding: 10px;
+    flex: 33%;
+    text-align: center;
+}
+
+.flex-item-right {
+    padding: 10px;
+    margin-right: 40px;
+    flex: 33%;
+    text-align: right;
+}
+
+.line {
+    width: 90%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.flex-middle {
+    display: flex;
+    font-size: 15px;
+    font-family: 'Abel', sans-serif;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*Media Queries*/
 
