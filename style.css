@@ -534,7 +534,6 @@ h6 {
 
 .flexbox-icons {
     display: flex;
-    flex-direction: row;
     text-align: center;
     justify-content: space-around;
     align-items: center;
@@ -546,12 +545,27 @@ h6 {
 }
 
 .icons {
-    width: 33%;
+    padding: 30px ;
+    flex: 33%;
 }
 
 .icons img {
     height: 230px;
 }
+
+@media screen and (max-width: 768px) {
+    .flexbox-icons {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .icons img {
+        height: 90px;
+    }
+} 
+
+
+
 
 
 
