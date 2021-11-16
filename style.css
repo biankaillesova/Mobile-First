@@ -3,8 +3,7 @@ body {
     margin: 0;
     width: 100%; 
     position: relative;
-    padding-bottom: 200px;
-    min-height: 300vh;
+    
 }
 
 /* HOME PAGE- 1st page*/
@@ -55,7 +54,7 @@ nav .links a {
     display: block;
     padding: 1em;
     font-family: 'Abel', sans-serif;
-    font-size: 20px;
+    font-size: 23px;
     color: white;
     text-decoration: none;
 }
@@ -106,8 +105,6 @@ nav .icon-burger .line {
     text-align: center;
     height: 100vh;
     overflow: hidden;
-    margin-left: 500px;
-    margin-right: 500px;
 }
 
 h2 {
@@ -115,12 +112,16 @@ h2 {
     font-size: 40px;
     color: #013E6A;
     text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
 .p1 {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: #013E6A;
+    margin-left: 395px;
+    margin-right: 395px;
 }
 
 /* HOME PAGE- 3rd page*/
@@ -193,22 +194,21 @@ button {
     border: 5px solid rgba(1, 62, 106, 100);
     background-color: white;
     border-radius: 10px;
-    height: 230px;
+    height: 290px;
     width: 30%;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 30px;
 }
 
-h4 {
+.MakeaRes {
+    height: 25%;
+}
+
+.h4 {
     font-family: 'Abel', sans-serif;
     font-size: 40px;
     color: #013E6A;
-}
-
-.reservationbtn {
-    margin: 20px;
 }
 
 .form-row {
@@ -220,17 +220,43 @@ h4 {
 input[type=date], input[type=time], input[type=number] {
     border: 2px solid rgba(1, 62, 106, 100%);
     border-radius: 10px;
-    padding: 10px 25px;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    transition-duration: 0.4s;
     cursor: pointer;
     background-color: white; 
     color: rgba(1, 62, 106, 100%); 
     font-family: 'Abel', sans-serif;
+}
+
+.datebtn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=submit] {
+    border: 2px solid rgba(1, 62, 106, 100%);
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: rgba(1, 62, 106, 100%); 
+    color: white; 
+    font-family: 'Abel', sans-serif;
+}
+
+.submitbtn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -256,17 +282,17 @@ input[type=date], input[type=time], input[type=number] {
         text-align: center;
         height: 100vh;
         overflow: hidden;
-        margin-left: 30px ;
-        margin-right: 30px ;
     }
 
     h2 {
-        margin-left: 30px ;
-        margin-right: 30px ;
+        margin-right: auto;
+        margin-left: auto;
+        width: 200px;
+        text-align: center;
     }
 
     .p1 {
-        font-size: 15px;
+        width: 290px;
     }
     
     .partycontainer {
@@ -310,10 +336,17 @@ input[type=date], input[type=time], input[type=number] {
         margin-right: auto;
     }
 
+    .MakeaRes {
+      height: 35%;
+    }
 
+    .h4 {
+        margin-top: 0px;
+        font-size: 35px;
+    }
 }
 
-/* MENU PAGE- 1st page*/
+/* MENU PAGE*/
 
 .headermenu {
     display: flex;
@@ -339,6 +372,13 @@ input[type=date], input[type=time], input[type=number] {
     text-align: center;
 }
 
+h6 {
+    font-family: 'Abel', sans-serif;
+    font-size: 40px;
+    color: #013E6A;
+    text-align: center;
+}
+
 .menu-heading-text {
     position: relative;
 
@@ -358,6 +398,7 @@ input[type=date], input[type=time], input[type=number] {
     text-align: center;
     text-align: left;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .menu-div {
@@ -414,7 +455,7 @@ input[type=date], input[type=time], input[type=number] {
 
 }
 
-/* GALLERY PAGE- 1st page*/
+/* GALLERY PAGE*/
 .headergallery {
     display: flex;
     width: 100%;
@@ -443,6 +484,7 @@ input[type=date], input[type=time], input[type=number] {
     max-width: 25%;
     padding: 0 4px;
     margin-top: 100vh;
+    margin-bottom: 10px;
 }
   
 .column img {
@@ -458,11 +500,13 @@ input[type=date], input[type=time], input[type=number] {
       flex: 100%;
       max-width: 100%;
       margin-top: 0vh;
+      margin-bottom: 0;
     }
 
     .column1 {
         margin-top: 100vh;
     }
+
 
     .h5 {
         font-size: 90px;
@@ -476,7 +520,7 @@ input[type=date], input[type=time], input[type=number] {
     }
 }   
 
-/* ABOUT US PAGE- 1st page*/
+/* CONTACT PAGE*/
 .headeraboutus {
     display: flex;
     width: 100%;
@@ -486,8 +530,27 @@ input[type=date], input[type=time], input[type=number] {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    position: absolute;
-    top: 0%;
+}
+
+.flexbox-icons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Abel', sans-serif;
+    color: #013E6A;
+    font-size: 23px;
+}
+
+.icons {
+    width: 33%;
+}
+
+.icons img {
+    height: 230px;
 }
 
 
@@ -532,6 +595,10 @@ input[type=date], input[type=time], input[type=number] {
 
 
 
+
+::-webkit-scrollbar {
+    display: none;
+}
 
 /* FOOTER*/
 footer {
@@ -609,7 +676,7 @@ footer {
     }
 
     nav .links a {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     nav .icon-burger {
