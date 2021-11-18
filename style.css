@@ -295,11 +295,6 @@ button {
     color: #013E6A;
 }
 
-.form-row {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
 input[type=date], input[type=time], input[type=number] {
     border: 2px solid rgba(1, 62, 106, 100%);
